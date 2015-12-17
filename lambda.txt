@@ -1,0 +1,15 @@
+1) LI V = λ
+
+2) LI λV.T = LI T, if LI T ≠ λ
+
+3) LI λV.(T V) = λV.(T V), if LI T = λ and not(V ε free(T))
+
+4) LI λV.T = λ if LI T = λ and not is_etaredex(λV.T)
+
+5) LI (T1 T2) = LI T1, if LI T1 ≠ λ
+
+6) LI (T1 T2) = LI T2, if LI T1 = λ and LI T2 ≠ λ
+
+7) LI (λV.T1 T2) = (λV.T1 T2), if LI λV.T1 = λ and LI T2 = λ
+
+8) LI (T1 T2) = λ if LI T1 = λ and LI T2 = λ and not is_betaredex((T1 T2))
